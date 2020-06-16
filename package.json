@@ -1,0 +1,26 @@
+{
+  "name": "html-prettify",
+  "version": "1.0.0",
+  "description": "HTML markup formatter",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [
+    "html",
+    "formatter",
+    "prettify"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dmc0125/html-prettify.git"
+  },
+  "author": "Dominik Michal",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "jest": "^26.0.1"
+  }
+}
