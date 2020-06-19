@@ -9,22 +9,26 @@
 module.exports = markup => {
   let openedIdx = -1;
 
-  const formatToLines = markup.trim().split('\n').reduce((formatted, el) => {
-    const trimmed = el.trim();
+  const formatToLines = markup
+    .trim()
+    .split('\n')
+    .filter(line => line.trim().length)
+    .reduce((formatted, el) => {
+      const trimmed = el.trim();
 
-    if (trimmed.startsWith('<')) {
-      openedIdx++;
-      return [...formatted, trimmed];
-    }
+      if (trimmed.startsWith('<')) {
+        openedIdx++;
+        return [...formatted, trimmed];
+      }
 
-    const newFormatted = [
-      ...formatted,
-      // eslint-disable-next-line prefer-template
-      `${formatted[openedIdx]}${trimmed === '>' || trimmed === '/>' ? trimmed : ' ' + trimmed}`,
-    ];
-    newFormatted.splice(openedIdx, 1);
-    return newFormatted;
-  }, []);
+      const newFormatted = [
+        ...formatted,
+        // eslint-disable-next-line prefer-template
+        `${formatted[openedIdx]}${trimmed === '>' || trimmed === '/>' ? trimmed : ' ' + trimmed}`,
+      ];
+      newFormatted.splice(openedIdx, 1);
+      return newFormatted;
+    }, []);
 
   return formatToLines;
 };
