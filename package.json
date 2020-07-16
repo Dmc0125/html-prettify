@@ -1,8 +1,9 @@
 {
   "name": "html-prettify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "HTML markup formatter",
   "main": "src/main.js",
+  "types": "types.d.ts",
   "scripts": {
     "test": "jest --watchAll"
   },
