@@ -11,7 +11,6 @@ const removeEmptyLines = nonFormattedString => (
     .trim()
     .split('\n')
     .reduce((nonempty, line) => {
-      console.log(line);
       const trimmedLine = line.trim();
       return trimmedLine.length ? [...nonempty, trimmedLine] : nonempty;
     }, [])
