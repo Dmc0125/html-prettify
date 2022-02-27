@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.4] - 2022-02-27
+
+- Code refactoring
+  
+### Added
+
+- Type definitions
+
 ## [1.0.3] - 2020-07-23
 
 ### Fixed

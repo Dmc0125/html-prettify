@@ -12,8 +12,9 @@ module.exports = {
     ecmaVersion: 11,
   },
   rules: {
-    'arrow-parens': 0,
     'no-console': 0,
     'no-plusplus': 0,
+    semi: ['error', 'never'],
+    'no-underscore-dangle': 0,
   },
-};
+}

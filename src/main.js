@@ -1,5 +1,5 @@
-const addIndentation = require('./utils/addIndentation');
-const toLines = require('./utils/toLines');
+const addIndentation = require('./utils/addIndentation')
+const { mergeAttributesWithElements } = require('./utils/toLines')
 
 /**
  * @function prettify
@@ -8,10 +8,10 @@ const toLines = require('./utils/toLines');
  * @param {string} markup
  * @returns {string} Indented html markup without empty lines
  */
-const prettify = markup => {
-  const splitted = toLines(markup);
+const prettify = (markup) => {
+  const splitted = mergeAttributesWithElements(markup)
 
-  return addIndentation(splitted);
-};
+  return addIndentation(splitted)
+}
 
-module.exports = prettify;
+module.exports = prettify
