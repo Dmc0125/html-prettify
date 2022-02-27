@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.5] - 2022-02-27
+
+### Fixed
+
+- Type declarations should be fixed
+
 ## [1.0.4] - 2022-02-27
 
 - Code refactoring

@@ -1,1 +1,3 @@
-export declare type prettify = (markup: string) => string
+export = prettify;
+
+declare function prettify(markup: string): string;
