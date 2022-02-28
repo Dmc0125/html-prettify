@@ -44,6 +44,21 @@ OUTPUT
 */
 ```
 
+## Params
+
+| Param | Type | Required | Description |
+| ----- | ---- | -------- | ----------- |
+| markup | `string` | yes | HTML markup to prettify |
+| options | `Options` | no | Prettify options
+
+### Options
+
+| Property | Type | Required | Default | Description |
+| ----- | ---- | -------- | ------ | ----------- |
+| char | `string` | no | `space` | Indentation character |
+| count | `number` | no | 2 | Count of character per indentation level |
+
+
 ## License
 
 [MIT License](https://opensource.org/licenses/mit-license.php)

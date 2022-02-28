@@ -1,10 +1,7 @@
 /**
- * @function addIndentation
- * @description Adds 2 spaces indentation
- *
  * @param {string[]} splittedHtml
- * @param {{ char: string; count: number}} options
- * @returns {string} Formatted html markup string with 2 spaces indentation
+ * @param {{ char?: string; count?: number}} options
+ * @returns {string}
  */
 const addIndentation = (splittedHtml, options = {}) => {
   const char = options.char || ' '

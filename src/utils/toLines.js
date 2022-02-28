@@ -1,7 +1,4 @@
 /**
- * @function removeEmptyLines
- * @description Takes any string as param, splits it to lines and removes empty lines
- *
  * @param {string} nonFormattedString Any non formatted string
  * @returns {string[]} Array of strings separated on new lines
  */
@@ -15,9 +12,6 @@ const removeEmptyLines = (nonFormattedString) => (
 )
 
 /**
- * @function mergeAttributesWithElements
- * @description Takes string with any formatting and splits it on new lines and removes empty lines
- *
  * @param {string} markup
  * @returns {string[]} Array of strings splitted on new lines without empty lines
  */

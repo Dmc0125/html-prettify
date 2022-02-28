@@ -1,8 +1,8 @@
 {
   "name": "html-prettify",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "HTML markup formatter",
-  "main": "src/main.js",
+  "main": "src/index.js",
   "types": "types/types.d.ts",
   "scripts": {
     "test": "jest --watchAll"
@@ -19,9 +19,9 @@
   "author": "Dominik Michal",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^7.2.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.21.2",
-    "jest": "^26.0.1"
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.5.1"
   }
 }

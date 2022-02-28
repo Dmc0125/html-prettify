@@ -1,4 +1,4 @@
-const prettify = require('../main')
+const prettify = require('../index')
 
 describe('prettify', () => {
   it('should format the html markup with attributes on new line and nested elements on same level', () => {

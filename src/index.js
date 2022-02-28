@@ -2,16 +2,14 @@ const addIndentation = require('./utils/addIndentation')
 const { mergeAttributesWithElements } = require('./utils/toLines')
 
 /**
- * @function prettify
- * @description Formats the html markup with 2 spaces indentation
- *
  * @param {string} markup
- * @returns {string} Indented html markup without empty lines
+ * @param {{ char?: string; count?: number }} options
+ * @returns {string}
  */
-const prettify = (markup) => {
+const prettify = (markup, options = {}) => {
   const splitted = mergeAttributesWithElements(markup)
 
-  return addIndentation(splitted)
+  return addIndentation(splitted, options)
 }
 
 module.exports = prettify
