@@ -9,10 +9,10 @@ describe('toLines', () => {
     it('should return array of strings if there are some on multiple lines', () => {
       const html = `
         some
-        string   
-        on    
-           
-        multiple\t lines   
+        string
+        on
+
+        multiple\t lines
       `
 
       expect(removeEmptyLines(html)).toBe('some\nstring\non\nmultiple\t lines')
@@ -38,11 +38,11 @@ describe('toLines', () => {
       const html = `
         <main
           class="some class"
-  
+
           id="some id"
         >
           <div>
-  
+
           </div>
         </main>
       `
@@ -51,6 +51,20 @@ describe('toLines', () => {
         '<main class="some class" id="some id">',
         '<div>',
         '</div>',
+        '</main>',
+      ]))
+    })
+
+    it('should join trailing attributes with correct spacing', () => {
+      const html = `
+        <main
+          class="some class"
+          id="some id">
+        </main>
+      `
+
+      expect(mergeAttributesWithElements(html)).toEqual(expect.arrayContaining([
+        '<main class="some class" id="some id">',
         '</main>',
       ]))
     })
