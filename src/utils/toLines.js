@@ -32,7 +32,9 @@ const mergeAttributesWithElements = (markup) => {
     }
 
     if (line.endsWith('>')) {
-      mergedLines.push(`${currentElement}${line}`)
+      mergedLines.push(`${currentElement}${
+        line.startsWith('>') || line.startsWith('<') ? '' : ' '
+      }${line}`)
       currentElement = ''
       // eslint-disable-next-line no-continue
       continue
