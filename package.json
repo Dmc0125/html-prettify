@@ -1,6 +1,6 @@
 {
   "name": "html-prettify",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "HTML markup formatter",
   "main": "src/index.js",
   "types": "types/types.d.ts",
